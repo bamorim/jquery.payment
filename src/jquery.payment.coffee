@@ -43,6 +43,31 @@ cards = [
       cvcLength: [3]
       luhn: true
   }
+  # Brazillian cards comes first too
+  {
+      type: 'hipercard'
+      pattern: /^(606282(\d{3})?)|(3841\d{15})$/
+      format: defaultFormat
+      length: [16,19]
+      cvcLength: [3]
+      luhn: true
+  }
+  {
+      type: 'elo'
+      pattern: /^((636368)|(438935)|(504175)|(451416)|(636297)|(5067)|(4576)|(4011))$/
+      format: defaultFormat
+      length: [16]
+      cvcLength: [3]
+      luhn: true
+  }
+  {
+      type: 'aura'
+      pattern: /^5078/
+      format: defaultFormat
+      length: [16]
+      cvcLength: [3]
+      luhn: true
+  }
   # Credit cards
   {
       type: 'visa'
@@ -95,30 +120,6 @@ cards = [
   {
       type: 'jcb'
       pattern: /^35/
-      format: defaultFormat
-      length: [16]
-      cvcLength: [3]
-      luhn: true
-  }
-  {
-      type: 'hipercard'
-      pattern: /^(606282(\d{3})?)|(3841\d{15})$/
-      format: defaultFormat
-      length: [16,19]
-      cvcLength: [3]
-      luhn: true
-  }
-  {
-      type: 'elo'
-      pattern: /^((636368)|(438935)|(504175)|(451416)|(636297)|(5067)|(4576)|(4011))$/
-      format: defaultFormat
-      length: [16]
-      cvcLength: [3]
-      luhn: true
-  }
-  {
-      type: 'aura'
-      pattern: /^5078/
       format: defaultFormat
       length: [16]
       cvcLength: [3]
